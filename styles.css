@@ -1,0 +1,215 @@
+:root{
+    --clr-primary: #565973;
+    --clr-secondary: white;
+    --font-primary:manrope;
+    --brand-blue: #6366f1;
+    --clr-bg:#f3f6ff;
+}
+body{
+  font-family: var(--font-primary);
+}
+.carouselcontainer{
+    background-color: var(--clr-primary);
+    display:flex;
+    flex-direction: column;
+}
+.first-square{
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+}
+.start{
+  display: flex;
+  text-align:start;
+  align-items:start
+}
+ul,ol{
+    list-style: none;
+    display: flex;
+}
+.FeaturesList{  
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.FeaturesImg{
+  padding: 1rem;
+  flex-shrink: 0;
+}
+.testimonialsect{
+  display: flex;
+}
+.secondcontainer{
+display:flex;
+flex-direction: column;
+}
+.Introimg{
+  height: 10em;
+}
+.appbuttons{
+  flex-direction: row;
+}
+.introtext{
+  font-family: var(--font-primary);
+}
+.center{
+  align-items: center;
+}
+.main-nav .container{
+  justify-content: space-between;
+}
+.container{
+  padding-inline: 1rem;
+  margin:0 auto;
+  width: 100%;
+}
+.showcase{
+  padding-top: 6rem;
+  text-align: center;
+  background-color: var(--clr-bg);
+  background-image: linear-gradient(to top,#6366f1,#da46ef,#f1f4fd);
+  .appbuttons{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+  }
+  .content{
+    padding-bottom: 3rem;
+    text-align: start;
+    margin-top: 5rem;
+  }
+  .appbutton{
+    width: 100%;
+    padding: .5em 1em;
+      img{
+        height: 3em;
+    }
+  }
+  .more{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap:2rem;
+  }
+  .first-square{
+    position: relative;
+  }
+  .iphone-img-container{
+    display: block;
+    width: 40%;
+
+    position: absolute;
+    bottom:0;
+    right:0;
+  }
+}
+.btn-dropdown-intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ /* The switch - the box around the slider */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.main-nav.right{
+  gap: 3rem;
+}
+.main-nav{
+  padding: 1em;
+}
+.flex{
+  display: flex;
+}
+.Display-1{
+  font-size: 80px;
+  font-family: var(--font-primary);
+}
+.Display-2{
+  font-size: 72px;
+  font-family: var(--font-primary);
+}
+.Display-4{
+  font-size:56px;
+}
+.FAQ-panel{
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 2em;
+}
+.appbutton{
+margin: 1em;
+}
+.webbutton{
+  background-color: var(--brand-blue);
+}
+.self-center
+{
+  align-self: center;
+}
+.square-4{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  list-style-type:url("img/icons/bx-check-circle.svg");
+}
+.square-5{
+  display: block;
+  background-color: var(--clr-bg);
+}

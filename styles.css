@@ -4,12 +4,15 @@
     --font-primary:manrope;
     --brand-blue: #6366f1;
     --clr-bg:#f3f6ff;
+    --clr-gray700:#565973;
+    --clr-gray300:#E2E5F1;
 }
 body{
   font-family: var(--font-primary);
+  background-color: var(--clr-secondary);
 }
 .carouselcontainer{
-    background-color: var(--clr-primary);
+    background-color: var(--clr-bg);
     display:flex;
     flex-direction: column;
 }
@@ -23,30 +26,18 @@ body{
   text-align:start;
   align-items:start
 }
-ul,ol{
+/*ul,ol{
     list-style: none;
     display: flex;
-}
-.FeaturesList{  
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.FeaturesImg{
-  padding: 1rem;
-  flex-shrink: 0;
-}
+}*/
+
 .testimonialsect{
   display: flex;
+  background-color: var(--clr-bg);
 }
-.secondcontainer{
-display:flex;
-flex-direction: column;
-}
+
 .Introimg{
   height: 10em;
-}
-.appbuttons{
-  flex-direction: row;
 }
 .introtext{
   font-family: var(--font-primary);
@@ -59,20 +50,30 @@ flex-direction: column;
 }
 .container{
   padding-inline: 1rem;
-  margin:0 auto;
+  margin-inline: auto;
   width: 100%;
+  @media(width >1200px){
+    max-width: 1080px;
+  }
+  @media(width >1400px){
+    max-width: 1260px;
+  }
+}
+.sign-in{
+  margin-left: 20px;
 }
 .showcase{
   padding-top: 6rem;
   text-align: center;
   background-color: var(--clr-bg);
-  background-image: linear-gradient(to top,#6366f1,#da46ef,#f1f4fd);
+  background-image: linear-gradient(to top,rgba(99,101,241,0.1),rgba(219,70,239,0.05)42%,rgba(241,244,253,0.07)83%);
   .appbuttons{
     display: flex;
     flex-direction: row;
     gap:1rem;
   }
   .content{
+    width: 40%;
     padding-bottom: 3rem;
     text-align: start;
     margin-top: 5rem;
@@ -95,7 +96,7 @@ flex-direction: column;
   }
   .iphone-img-container{
     display: block;
-    width: 40%;
+    width: 60%;
 
     position: absolute;
     bottom:0;
@@ -189,16 +190,35 @@ flex-direction: column;
 .Display-4{
   font-size:56px;
 }
+.Heading-4{
+  font-size: 24px;
+}
+.Body-M{
+  font-size: 16px;
+}
+.Heading-2{
+  font-size: 32px;
+}
+.Heading-1{
+  font-size: 40px;
+}
+.Body-L{
+  font-size: 18px;
+}
 .FAQ-panel{
-  border: 5px solid black;
+  box-shadow:4px 2px 6.4px -1px #13102266,4px -2px 6.4px -1px #13102233;
   border-radius: 5px;
-  padding: 2em;
+  padding: 1.5em;
+  margin: 2em;
 }
 .appbutton{
 margin: 1em;
 }
 .webbutton{
   background-color: var(--brand-blue);
+  border: var(--brand-blue);
+  border-radius: 5px;
+  color: white;
 }
 .self-center
 {
@@ -207,9 +227,99 @@ margin: 1em;
 .square-4{
   display:grid;
   grid-template-columns: repeat(2,1fr);
-  list-style-type:url("img/icons/bx-check-circle.svg");
+  ul{
+    list-style-image:url("img/icons/bx-check-circle.svg");
+  }
+  .webbutton{
+    width: 40%;
+    height: 3em;
+  }
 }
 .square-5{
-  display: block;
   background-color: var(--clr-bg);
+}
+.feature-card{
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  gap: 1rem;
+}
+.iphone-container{
+  display: block;
+}
+.feature-text{
+  flex:1;
+}
+.secondcontainer{
+  display: flex;
+  gap: 4rem;
+}
+.FeaturesList{  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 4rem;
+}
+.FeaturesImg{
+padding: 1rem;
+flex-shrink: 0;
+}
+.column{
+  flex-direction: column;
+}
+.input-group{
+  padding-left: 4em;
+  height: 2em;
+  .webbutton{
+    border-radius: 0 .5rem .5rem 0;
+    height: 2.5em;
+  }
+  .form-input{
+  border-radius: .5em 0 0 .5em;
+  }
+}
+.email{
+  padding-left: 4em;
+  height: 2em;
+}
+.text-center{
+  text-align: center;
+}
+.contact-containers{
+  border-width: 5px;
+  border-color:var(--clr-gray300);
+  padding: 10px;
+  button{
+    border: none;
+    background-color: white;
+  }
+  .bluebutton{
+    color: var(--brand-blue);
+  }
+}
+summary{
+display: flex;
+justify-content: space-between;
+}
+summary::after{
+  content: '';
+  width: 36px;
+  height: 20px;
+  background-image: url(img/next-btn.png);
+  background-size: cover;
+}
+.subscribe-container{
+  background-color: var(--clr-bg);
+  align-items: center;
+  justify-content: center;
+}
+.greenbutton{
+  color: #22C55E;
+}
+.copyright-footer{
+  color: #9397AD;
+  font-size: 14px;
+}
+.carousel-img{
+  display: flex;
+  justify-content: center;
 }

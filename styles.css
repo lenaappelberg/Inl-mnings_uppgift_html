@@ -285,9 +285,12 @@ flex-shrink: 0;
   text-align: center;
 }
 .contact-containers{
-  border-width: 5px;
+  border: width 5px;
   border-color:var(--clr-gray300);
-  padding: 10px;
+  border-style: solid;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 7px;
   button{
     border: none;
     background-color: white;

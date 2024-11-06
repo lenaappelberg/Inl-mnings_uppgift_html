@@ -30,12 +30,13 @@ body{
     list-style: none;
     display: flex;
 }*/
-
+.no-overflow{
+  overflow: hidden;
+}
 .testimonialsect{
   display: flex;
   background-color: var(--clr-bg);
 }
-
 .Introimg{
   height: 10em;
 }
